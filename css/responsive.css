@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/******** DESKTOP *******/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 10px;
+    }
+}
+
+/******* TABLET - PAISAGEM *******/
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .events {
+        justify-content: center;
+    }
+}
+
+/******** TABLET - RETRATO *******/
+@media all and (min-width: 480px) and (max-width: 768px)  {
+    .events {
+        justify-content: center;
+    }
+
+    .item-title {
+        margin-bottom: 15px;
+
+    }
+
+    .grid-items h1 {
+        font-size: 1.8rem;
+    }
+
+    .capa-bg {
+        align-items: flex-start;
+    }
+
+    .capa-menu {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+}
+
+/******** PHONE PAISAGEM E MENORES *******/
+@media all and (max-width: 692px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-items {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+}
+
+/* TESTE GITBASH */
